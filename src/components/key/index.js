@@ -1,8 +1,12 @@
 import React from "react";
 import "./Key.css";
 
-function Key() {
-  return <div id="key"></div>;
+function Key({ note, color }) {
+  return (
+    <div id={note} className={`key ${color}`}>
+      {note}
+    </div>
+  );
 }
 
 export default Key;

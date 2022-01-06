@@ -1,2 +1,43 @@
-#key {
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.white {
+  background: white;
+  width: 6rem;
+  height: 15rem;
+}
+
+.black {
+  position: absolute;
+  background: black;
+  align-items: center;
+  color: white;
+  width: 3rem;
+  height: 10rem;
+}
+
+#Db {
+  left: 4.75rem;
+}
+
+#Eb {
+  left: 11rem;
+}
+
+#Gb {
+  left: 23.5rem;
+}
+
+#Ab {
+  right: 10.75rem;
+}
+
+#Bb {
+  right: 4.5rem;
 }
