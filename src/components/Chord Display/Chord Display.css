@@ -1,0 +1,12 @@
+#ChordDisplay {
+  display: flex;
+}
+
+p {
+  background: rgb(54, 54, 54);
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+}

@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 4rem 0;
+  background: rgb(54, 54, 54);
+  color: white;
+  font-size: 3rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+}
+
+.controls {
+  display: flex;
+  width: 41.5%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn {
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  width: 30px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#sharps-flats-btn {
+  background: green;
+}
+
+#sharps-flats-btn img {
+  filter: brightness(0) invert(100%);
+}
+
+#sharps-flats-btn:hover {
+  background: hsl(120, 100%, 15%);
+}
+
+#clear-btn {
+  background: red;
+}
+
+#clear-btn:hover {
+  background: hsl(0, 100%, 35%);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  opacity: 0.4;
+}

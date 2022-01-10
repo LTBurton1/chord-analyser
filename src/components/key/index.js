@@ -1,9 +1,22 @@
-import React from "react";
+import { useState } from "react";
+
 import "./Key.css";
 
-function Key({ note, color }) {
+function Key({ id, note, color, handleClick }) {
+  const [isSelected, setIsSelected] = useState(false);
+
+  function toggleSelected(e) {
+    setIsSelected(!isSelected);
+    handleClick(e.target);
+  }
+
   return (
-    <div id={note} className={`key ${color}`}>
+    <div
+      id={id}
+      className={`key ${color} ${isSelected ? "selected" : ""}`}
+      onClick={toggleSelected}
+      selected={isSelected}
+    >
       {note}
     </div>
   );
