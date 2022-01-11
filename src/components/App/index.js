@@ -19,6 +19,10 @@ function App() {
     }
   }
 
+  function clearSelected() {
+    setSelectedNotes([]);
+  }
+
   function toggleFlats() {
     setIsFlat(!isFlat);
   }
@@ -40,7 +44,7 @@ function App() {
               <img src={flatSymbol} width="40%" alt="" />
             )}
           </button>
-          <button className="btn" id="clear-btn">
+          <button className="btn" id="clear-btn" onClick={clearSelected}>
             <i className="fas fa-x"></i>
           </button>
         </div>

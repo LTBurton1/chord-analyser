@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react";
 
 import "./Chord Display.css";
-import { chords } from "../../data";
+import { chordsData } from "../../data";
 
 function ChordDisplay({ isFlat, selectedNotes }) {
-  const [foundChords, setFoundChords] = useState([]);
+  const [chords, setChords] = useState([]);
 
   useEffect(() => {
     function getChords() {
-      const found = chords.filter(
+      const found = chordsData.filter(
         chord =>
           chord[2].length === selectedNotes.length &&
           chord[2].every(note => selectedNotes.includes(note))
       );
 
-      setFoundChords(found);
+      setChords(found);
     }
     getChords();
   }, [selectedNotes]);
 
-  return foundChords.length > 0 ? (
+  return chords.length > 0 ? (
     <div id="ChordDisplay">
-      {foundChords.map(chord => (
+      {chords.map(chord => (
         <p key={chord}>{isFlat ? chord[0] : chord[1]}</p>
       ))}
     </div>

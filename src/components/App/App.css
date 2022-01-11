@@ -28,7 +28,7 @@ main {
 
 .controls {
   display: flex;
-  width: 41.5%;
+  width: 28%;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -71,6 +71,7 @@ main {
 footer {
   width: 100%;
   position: absolute;
-  bottom: 2rem;
-  opacity: 0.4;
+  bottom: 10px;
+  font-weight: 500;
+  opacity: 0.3;
 }

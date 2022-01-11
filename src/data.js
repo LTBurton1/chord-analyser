@@ -13,7 +13,7 @@ export const notes = [
   { name: "B", alternate: "B" },
 ];
 
-export const chords = [
+export const chordsData = [
   // C Chords
   ["C", "C", ["C", "E", "G"]],
   ["Cm", "Cm", ["C", "Eb", "G"]],
