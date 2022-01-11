@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <div id="app">
+    <div className="noselect" id="app">
       <header>
         <h1>CHORD ANALYSER</h1>
       </header>
