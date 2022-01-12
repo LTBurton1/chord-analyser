@@ -4,7 +4,7 @@ import { notes } from "../../data";
 
 import Key from "../Key";
 
-function Keyboard({ isFlat, toggleSelected }) {
+function Keyboard({ isFlat, selectedNotes, toggleSelected }) {
   return (
     <div id="Keyboard">
       {notes.map(({ name, alternate }) => (
@@ -14,6 +14,7 @@ function Keyboard({ isFlat, toggleSelected }) {
           note={isFlat ? name : alternate}
           color={name === alternate ? "white" : "black"}
           handleClick={toggleSelected}
+          selectedNotes={selectedNotes}
         />
       ))}
     </div>
