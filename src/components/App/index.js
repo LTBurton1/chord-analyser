@@ -45,7 +45,7 @@ function App() {
             )}
           </button>
           <button className="btn" id="clear-btn" onClick={clearSelected}>
-            <i className="fas fa-x"></i>
+            Clear
           </button>
         </div>
 
