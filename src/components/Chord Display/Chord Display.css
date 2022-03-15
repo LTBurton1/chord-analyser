@@ -1,5 +1,6 @@
 #ChordDisplay {
   display: flex;
+  cursor: pointer;
 }
 
 p {
