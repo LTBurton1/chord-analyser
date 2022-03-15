@@ -13,6 +13,96 @@ export const notes = [
   { name: "B", alternate: "B" },
 ];
 
+export const noteNames = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
+
+// No. of semitones and associated interval names
+export const intervals = {
+  0: "Unis",
+  1: "m2",
+  2: "M2",
+  3: "m3",
+  4: "M3",
+  5: "P4",
+  6: "Tritone",
+  7: "P5",
+  8: "m6",
+  9: "M6",
+  10: "m7",
+  11: "M7",
+  12: "8ve",
+};
+
+// Chord qualities and associated interval formulae
+export const chords = [
+  // Major Chords
+  ["", ["M3", "m3"]],
+  [" (1st inversion)", ["m3", "P4"]],
+  [" (2nd inversion)", ["P4", "M3"]],
+  ["add9", ["M2", "M2", "m3"]],
+  ["add9 (1st inversion)", ["M2", "m3", "P4"]],
+  ["add9 (2nd inversion)", ["m3", "P4", "M2"]],
+  ["add9 (3rd inversion)", ["P4", "M2", "M2"]],
+  ["6", ["M3", "m3", "M2"]],
+  ["6 (1st inversion)", ["m3", "M2", "m3"]],
+  ["6 (2nd inversion)", ["M2", "m3", "M3"]],
+  ["6 (3rd inversion)", ["m3", "M3", "m3"]],
+  ["maj7", ["M3", "m3", "M3"]],
+  ["maj7 (1st inversion)", ["m3", "M3", "m2"]],
+  ["maj7 (2nd inversion)", ["M3", "m2", "M3"]],
+  ["maj7 (3rd inversion)", ["m2", "M3", "m3"]],
+  // Minor Chords
+  ["m", ["m3", "M3"]],
+  ["m (1st inversion)", ["M3", "P4"]],
+  ["m (2nd inversion)", ["P4", "m3"]],
+  ["m(add9)", ["M2", "m2", "M3"]],
+  ["m(add9) (1st inversion)", ["m2", "M3", "P4"]],
+  ["m(add9) (2nd inversion)", ["M3", "P4", "M2"]],
+  ["m(add9) (3rd inversion)", ["P4", "M2", "m2"]],
+  ["m6", ["m3", "M3", "M2"]],
+  ["m6 (1st inversion)", ["M3", "M2", "m3"]],
+  ["m6 (2nd inversion)", ["M2", "m3", "m3"]],
+  ["m6 (3rd inversion)", ["m3", "m3", "M3"]],
+  ["m7", ["m3", "M3", "m3"]],
+  ["m7 (1st inversion)", ["M3", "m3", "M2"]],
+  ["m7 (2nd inversion)", ["m3", "M2", "m3"]],
+  ["m7 (3rd inversion)", ["M2", "m3", "M3"]],
+  ["m(maj7)", ["m3", "M3", "M3"]],
+  ["m(maj7) (1st inversion)", ["M3", "M3", "m2"]],
+  ["m(maj7) (2nd inversion)", ["M3", "m2", "m3"]],
+  ["m(maj7) (3rd inversion)", ["m2", "m3", "M3"]],
+  // Dominant Chords
+  ["7", ["M3", "m3", "m3"]],
+  ["7 (1st inversion)", ["m3", "m3", "M2"]],
+  ["7 (2nd inversion)", ["m3", "M2", "M3"]],
+  ["7 (3rd inversion)", ["M2", "M3", "m3"]],
+  ["7#5", ["M3", "M3", "M2"]],
+  ["7#5 (1st inversion)", ["M3", "M2", "M2"]],
+  ["7#5 (2nd inversion)", ["M2", "M2", "M3"]],
+  ["7#5 (3rd inversion)", ["M2", "M3", "M3"]],
+  // Dim/Aug Chords
+  ["o", ["m3", "m3"]],
+  ["o7", ["m3", "m3", "m3"]],
+  ["+", ["M3", "M3"]],
+  ["ø7", ["m3", "m3", "M3"]],
+  ["ø7 (1st inversion)", ["m3", "M3", "M2"]],
+  ["ø7 (2nd inversion)", ["M3", "M2", "m3"]],
+  ["ø7 (3rd inversion)", ["M2", "m3", "m3"]],
+  ["maj7#5", ["M3", "M3", "m3"]],
+  ["maj7#5 (1st inversion)", ["M3", "m3", "m2"]],
+  ["maj7#5 (2nd inversion)", ["m3", "m2", "M3"]],
+  ["maj7#5 (3rd inversion)", ["m2", "M3", "M3"]],
+  // Sus Chords
+  ["sus2", ["M2", "P4"]],
+  ["maj7sus2", ["M2", "P4", "M3"]],
+  ["sus4", ["P4", "M2"]],
+  ["maj7sus4", ["P4", "M2", "M3"]],
+  // Extended Chords
+  ["maj9", ["M3", "m3", "M3", "m3"]],
+  ["min9", ["m3", "M3", "m3", "M3"]],
+  ["9", ["M3", "m3", "m3", "M3"]],
+];
+
+// Old chords data (keep for testing purposes)
 export const chordsData = [
   // C Chords
   ["C", "C", ["C", "E", "G"]],
