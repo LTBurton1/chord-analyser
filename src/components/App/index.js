@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import flatSymbol from "../../images/flat.png";
 import sharpSymbol from "../../images/sharp.png";
-import notes from "./audio/notes.wav";
+import notes from "../../audio/notes.wav";
 
 import Keyboard from "../Keyboard";
 import ChordDisplay from "../Chord Display";
