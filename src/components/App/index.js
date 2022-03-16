@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import "./App.css";
+import "./app.css";
 import flatSymbol from "../../images/flat.png";
 import sharpSymbol from "../../images/sharp.png";
 
-import Keyboard from "../Keyboard";
-import ChordDisplay from "../Chord Display";
+import Keyboard from "../keyboard";
+import ChordDisplay from "../chord-display";
 import useNotes from "../../hooks/useNotes";
 
 function App() {

@@ -1,8 +1,8 @@
-import "./Keyboard.css";
+import "./keyboard.css";
 
 import { notes } from "../../data";
 
-import Key from "../Key/index.js";
+import Key from "../key";
 
 function Keyboard({ isFlat, selectedNotes, toggleSelected }) {
   return (

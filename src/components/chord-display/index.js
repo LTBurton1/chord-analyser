@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-import "./Chord Display.css";
+import "./chord-display.css";
 
-import useNotes from "../../hooks/useNotes";
+import useNotes from "../../hooks/useNotes.js";
 
 function ChordDisplay({ isFlat, selectedNotes }) {
   const [chords, setChords] = useState([]);

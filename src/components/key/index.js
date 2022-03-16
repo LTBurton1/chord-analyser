@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "./Key.css";
+import "./key.css";
 
 function Key({ id, note, color, handleClick, selectedNotes }) {
   const [isSelected, setIsSelected] = useState(false);
