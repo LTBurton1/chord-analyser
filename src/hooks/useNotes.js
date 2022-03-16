@@ -18,6 +18,7 @@ export default function useNotes() {
       Bb: [25000, 2500],
       B: [27500, 2500],
     },
+    volume: 0.75,
   });
 
   function playNote(note) {
