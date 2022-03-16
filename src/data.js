@@ -81,8 +81,15 @@ export const chords = [
   ["7#5 (3rd inversion)", ["M2", "M3", "M3"]],
   // Dim/Aug Chords
   ["o", ["m3", "m3"]],
+  ["o (1st inversion)", ["m3", "m3"]],
+  ["o (2nd inversion)", ["m3", "m3"]],
   ["o7", ["m3", "m3", "m3"]],
+  ["o7 (1st inversion)", ["m3", "m3", "m3"]],
+  ["o7 (2nd inversion)", ["m3", "m3", "m3"]],
+  ["o7 (3rd inversion)", ["m3", "m3", "m3"]],
   ["+", ["M3", "M3"]],
+  ["+ (1st inversion)", ["M3", "M3"]],
+  ["+ (2nd inversion)", ["M3", "M3"]],
   ["ø7", ["m3", "m3", "M3"]],
   ["ø7 (1st inversion)", ["m3", "M3", "M2"]],
   ["ø7 (2nd inversion)", ["M3", "M2", "m3"]],
@@ -96,10 +103,14 @@ export const chords = [
   ["maj7sus2", ["M2", "P4", "M3"]],
   ["sus4", ["P4", "M2"]],
   ["maj7sus4", ["P4", "M2", "M3"]],
-  // Extended Chords
-  ["maj9", ["M3", "m3", "M3", "m3"]],
+  // Extended/Other Chords
+  [" Lydian", ["Tritone", "m2"]],
+  [" Phrygian", ["m2", "Tritone"]],
+  ["maj9", ["M2", "M2", "m3", "M3"]],
   ["min9", ["m3", "M3", "m3", "M3"]],
-  ["9", ["M3", "m3", "m3", "M3"]],
+  ["9", ["M2", "M2", "m3", "m3"]],
+  ["7b9", ["m2", "m3", "m3", "m3"]],
+  ["7#9", ["m3", "m2", "m3", "m3"]],
 ];
 
 // Old chords data (keep for testing purposes)
